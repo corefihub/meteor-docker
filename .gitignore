@@ -1,0 +1,31 @@
+# generic files to ignore
+# backup files (*~) and vim swap file (.swp), MacOS dir file (.DS_Store)
+*~
+*.lock
+*.DS_Store
+.*.swp
+*.out
+*.bak
+*.iml
+.editorconfig
+
+# Created by http://www.gitignore.io
+### Meteor ###
+.meteor/local
+**/.build*
+
+### Idea ###
+.idea
+
+### SublimeText ###
+# workspace files are user-specific
+*.sublime-workspace
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+### VSCode ###
+**/.vscode/
+
+# subdirs with git
+#**/.git/**
