@@ -1,4 +1,4 @@
-FROM node:14.17.4
+FROM node:14.17.5
 
 RUN apt-get update && apt-get install -y \
     gcc g++ build-essential \
@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 
 # install meteor
 USER node
-RUN curl https://install.meteor.com/?release=2.3.4 | sh
+RUN curl https://install.meteor.com/?release=2.3.5 | sh
 ENV PATH="${PATH}:/home/node/.meteor"
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
